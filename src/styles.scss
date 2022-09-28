@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+$principalBlue: #003049;
+$principalYellow: #d62828;
+
+.principalBlue {
+    background-color: $principalBlue;
+}
+
+.principalYellow {
+    background-color: $principalYellow;
+}
+
+section {
+    padding: 4rem;
+}
+
+* {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+

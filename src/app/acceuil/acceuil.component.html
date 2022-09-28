@@ -1,19 +1,37 @@
-<div id="bigContainer" class="text-center text-white d-flex">
+
+<section class="text-center text-white d-flex principalBlue">
+    
     <div class="container my-5 mx-auto">
         <div class="row">
             <div class="col-lg-10 mx-auto">
-                <p class="text-light">Bonjour</p>
-                <p class="text-light">Je suis Antoine Varnerot</p>
+                <h1 class="text-light text-uppercase">Bonjour</h1>
+                <h1 class="text-light text-uppercase">Je suis <strong>Antoine Varnerot</strong> </h1>
             </div>
         </div>
-        <hr>
+        <hr class="mx-auto">
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <p class="text-light">J'aime bien les POKs ...</p>
                 <p class="text-light">Et surtout les MONS</p>
             </div>
         </div>
+        <a [href]="githubUrl" target="_blank">
+            <img src="../../assets/images/github_hexagon_icon.png" class="icon" alt="" matTooltip="Github"
+             matTooltipPosition="above">
+        </a>
+        <a [href]="linkedinUrl" target="_blank">
+            <img src="../../assets/images/linkedin_hexagon_icon.png" class="icon" alt="" matTooltip="LinkedIn" matTooltipPosition="above">
+        </a>
+        <a [href]="facebookUrl" target="_blank">
+            <img src="../../assets/images/facebook_hexagon_icon.png" class="icon" alt="" matTooltip="Facebook" matTooltipPosition="above">
+        </a>
+        <a [href]="instagramUrl" target="_blank">
+            <img src="../../assets/images/instagram_hexagon_icon.png" class="icon" alt="" matTooltip="Instagram" matTooltipPosition="above">
+        </a>
+        
+            
         
     </div>
-</div>
+</section>
+
 
