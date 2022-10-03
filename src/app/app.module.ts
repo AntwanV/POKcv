@@ -7,6 +7,8 @@ import { AcceuilComponent } from './acceuil/acceuil.component';
 import { OverviewComponent } from './overview/overview.component';
 import { SkillsComponent } from './skills/skills.component';
 
+import { NgxTimelineVerticalModule } from 'ngx-timeline-vertical';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +19,7 @@ import { SkillsComponent } from './skills/skills.component';
   ],
   imports: [
     BrowserModule,
+    NgxTimelineVerticalModule
   ],
   providers: [],
   bootstrap: [AppComponent]
