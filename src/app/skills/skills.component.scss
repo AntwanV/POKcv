@@ -1,0 +1,32 @@
+.bar {
+    height: 28px;
+    background-color: #003049;
+    margin: 0 0 15px 0;
+
+    //Just to position the div and be able to use position: absolute on it child
+    position: relative;
+    top: 0;
+    left: 0;
+
+    .fill {
+        background-color: rgb(0, 188, 188);
+
+        .tag {
+            color: white;
+            position: absolute;
+            top: 0;
+            left: 0%;
+            height: 100%;
+            width: 110px;
+            background-color: rgb(0, 137, 137);
+            font-weight: bold;
+        }
+    }
+
+    span {
+        position: absolute;
+        right: 5px;
+        top: 0;
+    }
+}
+
