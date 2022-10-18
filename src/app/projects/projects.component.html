@@ -1,0 +1,11 @@
+<section>
+    <h2 class="text-uppercase text-white text-center my-5">Projets</h2>
+    <div>
+        <button mat-button color="primary">All</button>
+        <button mat-button>Angular</button>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <app-project-card  [project]="project" *ngFor="let project of Projects" ></app-project-card>
+    </div>
+    
+</section>

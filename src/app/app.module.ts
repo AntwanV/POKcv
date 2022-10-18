@@ -8,6 +8,8 @@ import { OverviewComponent } from './overview/overview.component';
 import { SkillsComponent } from './skills/skills.component';
 
 import { NgxTimelineVerticalModule } from 'ngx-timeline-vertical';
+import { ProjectsComponent } from './projects/projects.component';
+import { ProjectCardComponent } from './project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { NgxTimelineVerticalModule } from 'ngx-timeline-vertical';
     NavbarComponent,
     AcceuilComponent,
     OverviewComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProjectsComponent,
+    ProjectCardComponent
   ],
   imports: [
     BrowserModule,

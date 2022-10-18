@@ -2,7 +2,7 @@ import { Component, HostListener } from '@angular/core';
 import gsap from 'gsap' ;
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import LocomotiveScroll from 'locomotive-scroll';
-
+import AOS from "aos";
 
 @Component({
   selector: 'app-root',
@@ -17,6 +17,8 @@ export class AppComponent {
 
   ngOnInit(){
 
+    AOS.init();
+    
     gsap.registerPlugin(ScrollTrigger);
     this.scroller = new LocomotiveScroll({
       el: document.querySelector(".scrollTrigger") as HTMLElement,

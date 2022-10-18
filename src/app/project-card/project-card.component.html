@@ -1,0 +1,23 @@
+
+<div class="col">
+    <div class="card .h-100">
+        <div class="bg-image hover-overlay" mdbRipple rippleColor="light">
+            <img [src]="project.image" class="card-img-top" alt=""/>
+            <a [href]="project.link" target="_blank">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.35);" >           
+                <div *ngFor="let l of link">
+                    <img [src]="l" />
+                </div>
+            </div>
+            </a>
+          </div>
+        
+        <div class="card-body">
+            <h5 class="card-title">{{project.title}}</h5>
+            <p class="card-text">
+            {{project.description}}
+            </p>
+        </div>
+    </div>
+</div>     
+
