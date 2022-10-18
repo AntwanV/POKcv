@@ -1,8 +1,9 @@
 <section>
-    <h2 class="text-uppercase text-white text-center my-5">Projets</h2>
-    <div>
-        <button mat-button color="primary">All</button>
-        <button mat-button>Angular</button>
+    <h2 class="text-uppercase text-white text-center my-5" id="projets">Projets</h2>
+    <div class="justify-content-center">
+        <button type="button" class="btn btn-outline-light mr-3 my-2" value="all" (click)="filter('All')">All</button>
+        <button type="button" class="btn btn-outline-light mx-3 my-2" value="Angular" (click)="filter('Angular')">Angular</button>
+        <button type="button" class="btn btn-outline-light mr-3 my-2" value="SCSS" (click)="filter('SCSS')">SCSS</button>
     </div>
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <app-project-card  [project]="project" *ngFor="let project of Projects" ></app-project-card>

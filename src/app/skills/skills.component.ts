@@ -68,9 +68,9 @@ export class SkillsComponent implements OnInit {
   addAllEvent(): void {
     let events: Event[]; 
 
-    let event1: Event = new Event("#d62828", "24px", "right", "Diplomé de Centrale Méditérannée");
-    let event2: Event = new Event("#d62828", "24px", "left", "Erasmus à l'université de Séville");
-    let event3: Event = new Event("#d62828", "24px", "right", "Stage Développeur Fullstack chez Zionsay");
+    let event1: Event = new Event("#d62828", "24px", "right", "Diplomé de Centrale Méditérannée (2023) option Développement et Organisation des systèmes IT");
+    let event2: Event = new Event("#d62828", "24px", "left", "Erasmus à l'université de Séville en IA, gestion de projet agile et Deep Learning");
+    let event3: Event = new Event("#d62828", "24px", "right", "Stage Développeur Fullstack chez Zionsay. PHP et Javascript");
     events = [event1, event2, event3];
     
     events.forEach(element => {

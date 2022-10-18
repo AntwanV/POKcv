@@ -49,4 +49,11 @@ export class ProjectsComponent implements OnInit {
     }]
   }
 
+  filter(value: String): void {
+    switch(value) {
+      case 'all':
+        break;
+    }
+  }
+
 }
