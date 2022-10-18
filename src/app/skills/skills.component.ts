@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Event, Point, Line, TimelineProperties, TimelineSegment } from 'ngx-timeline-vertical';
+import AOS from "aos";
 
 @Component({
   selector: 'app-skills',
@@ -25,6 +26,8 @@ export class SkillsComponent implements OnInit {
     this.ngxPointInit();
     this.ngxTimelineThicknessInit();
     this.addAllEvent();
+
+    AOS.init();
   }
 
   ngxPointInit(): void {
@@ -65,9 +68,9 @@ export class SkillsComponent implements OnInit {
   addAllEvent(): void {
     let events: Event[]; 
 
-    let event1: Event = new Event("#d62828", "24px", "right", "Diplomé de Centrale Méditérannée");
-    let event2: Event = new Event("#d62828", "24px", "left", "Erasmus à l'université de Séville");
-    let event3: Event = new Event("#d62828", "24px", "right", "Stage Développeur Fullstack chez Zionsay");
+    let event1: Event = new Event("#d62828", "24px", "right", "Diplomé de Centrale Méditérannée (2023) option Développement et Organisation des systèmes IT");
+    let event2: Event = new Event("#d62828", "24px", "left", "Erasmus à l'université de Séville en IA, gestion de projet agile et Deep Learning");
+    let event3: Event = new Event("#d62828", "24px", "right", "Stage Développeur Fullstack chez Zionsay. PHP et Javascript");
     events = [event1, event2, event3];
     
     events.forEach(element => {
@@ -75,9 +78,11 @@ export class SkillsComponent implements OnInit {
     });
 
     //Change style 
-    document.querySelector(".ngx-timeline-event-container")
+    // document.querySelector(".ngx-timeline-event").setAttribute("data-aos", "fade-left");
     
   }
+
+  
 
   
   
